@@ -2,11 +2,11 @@
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
 Console.Write("Введите целое положительное число ");
-int N = Convert.ToInt32(Console.ReadLine());
-int counter = 1;
-if (N > 0)
+int n = Convert.ToInt32(Console.ReadLine());
+if (n > 0)
 {
-    while (counter <= N)
+    int counter = 1;
+    while (counter <= n)
     {
         if (counter % 2 == 0)
         {

@@ -6,12 +6,11 @@ Console.Write("Введите 1 целое число ");
 int num1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите 2 целое число ");
 int num2 = Convert.ToInt32(Console.ReadLine());
-int max = num1;
-if (num2 > max)
+if (num2 > num1)
 {
     Console.WriteLine($"Ответ: {num2}");
 }
 else
 {
-    Console.WriteLine($"Ответ: {max}");
+    Console.WriteLine($"Ответ: {num1}");
 }
