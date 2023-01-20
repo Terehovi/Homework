@@ -13,7 +13,10 @@ bool DayOfWeek(int number)
 {
     return ((num == 6) || (num == 7));
 }
-
-bool dayOfWeek = DayOfWeek(num);
-if (dayOfWeek == true) Console.WriteLine("Да");
-else Console.WriteLine("Нет");
+if ((num >= 1) && (num <= 7))
+{
+    bool dayOfWeek = DayOfWeek(num);
+    if (dayOfWeek == true) Console.WriteLine("Да");
+    else Console.WriteLine("Нет");
+}
+else Console.WriteLine("Ошибка. Пожалуйста введите цифру то 1 до 7");

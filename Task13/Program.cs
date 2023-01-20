@@ -13,7 +13,14 @@ while (num / 1000 != 0)
     num /= 10;
 }
 
-if (threeDigits == 0) Console.WriteLine("Третьей цифры нет");
+if (threeDigits == 0)
+{
+    Console.WriteLine("Третьей цифры нет");
+    while (num / 1000 != 0)
+    {
+        num /= 10;
+    }
+} 
 else
 {
     num %= 10;

@@ -8,5 +8,12 @@ int SecondDigit(int number)
     return number;
 }
 
-int secondDigit = SecondDigit(num);
-Console.WriteLine(secondDigit);
+if ((num >= 100) && (num <= 999))
+{
+    int secondDigit = SecondDigit(num);
+    Console.WriteLine(secondDigit);
+}
+else
+{
+    Console.WriteLine("Ошибка. Пожалуйста введите целое трёхзначное число");
+}
